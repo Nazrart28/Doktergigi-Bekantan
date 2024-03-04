@@ -46,9 +46,9 @@
         <v-window v-model="tab">
         <v-window-item v-for="n in 4" :key="n" :value="n">
           <v-container fluid>
-            <v-row>
+            <v-row justify="center" align="center">
               <v-col cols="12" sm="2">
-                <div class="text-subtile-1 text-medium-emphasis">Your Destination</div>
+                <div class="text-subtile-1 text-medium-emphasis">Select Hospital</div>
                 <v-select density="compact" placeholder="Destination"  :items="[
                             'Fortis Memorial Research Institute',
                             'Mega Medipol University Hospital',
@@ -60,40 +60,40 @@
                           variant="outlined"></v-select>
               </v-col>
               <v-col cols="12" sm="2">
-                <div class="text-subtile-1 text-medium-emphasis">Check in</div>
+                <div class="text-subtile-1 text-medium-emphasis">Select a date</div>
                 <v-text-field density="compact" placeholder="Date" type="date" variant="outlined"></v-text-field>
               </v-col>
-              <v-col cols="12" sm="2">
+              <!-- <v-col cols="12" sm="2">
                 <div class="text-subtile-1 text-medium-emphasis">Check out</div>
                 <v-text-field density="compact" placeholder="Date" type="date" variant="outlined"></v-text-field>
-              </v-col>
+              </v-col> -->
               <v-col cols="12" sm="2">
-                <div class="text-subtile-1 text-medium-emphasis">Child</div>
-                <v-select density="compact" placeholder="Child"  :items="[
-                            '1',
-                            '2',
-                            '3',
-                            '4',
-                            '5',
-                            '6',
+                <div class="text-subtile-1 text-medium-emphasis">Specialist</div>
+                <v-select density="compact" placeholder="Specialist"  :items="[
+                            'Periodonsia specialist',
+                            'Orthodontist specialist',
+                            'Oral disease specialist',
+                            'Dental conservation specialist',
+                            'Paediatric dentistry specialist',
+                            'Oral surgery specialist',
                           ]"
                           variant="outlined"></v-select>
               </v-col>
               <v-col cols="12" sm="2">
-                <div class="text-subtile-1 text-medium-emphasis">Adult</div>
-                <v-select density="compact" placeholder="Adult"  :items="[
-                            '1',
-                            '2',
-                            '3',
-                            '4',
-                            '5',
-                            '6',
+                <div class="text-subtile-1 text-medium-emphasis">Types of treatment</div>
+                <v-select density="compact" placeholder="Types of treatment"  :items="[
+                            'Scaling',
+                            'Sealant',
+                            'Tooth fillings',
+                            'Root canal treatment',
+                            'Tooth extraction',
+                            'Fitting of dentures',
                           ]"
                           variant="outlined"></v-select>
               </v-col>
               <v-col cols="12" sm="2">
                 <v-btn class="text-none mt-5" color="indigo-lighten-1" size="x-large" variant="flat" rounded="0" elevation="12">
-                  Book Now
+                  Schedule Now
                 </v-btn>
               </v-col>
             </v-row>
@@ -205,7 +205,7 @@
         </v-row>
       </v-col>
       <v-col cols="12" sm="12">
-        <h1 class="text-center">Checkout Our Hospital</h1>
+        <h1 class="text-center">Our Hospital</h1>
         <v-row justify="center">
           <v-col cols="12" sm="10">
             <v-row>
@@ -391,27 +391,27 @@ export default {
     offers: [
       {
         image: "i11.png",
-        title: " Different Coutries",
+        title: "Dental crown",
       },
       {
         image: "i12.png",
-        title: " Bus Tours",
+        title: "Veneer",
       },
       {
         image: "i13.png",
-        title: " Food Tours",
+        title: "Dental bridge",
       },
       {
         image: "i14.png",
-        title: " Summer Rest",
+        title: "Teeth whitening",
       },
       {
         image: "i15.png",
-        title: "Ship Cruises",
+        title: "Braces",
       },
       {
         image: "i16.png",
-        title: "Mountains Tours",
+        title: "Dental implants",
       },
     ],
     hospital: [
